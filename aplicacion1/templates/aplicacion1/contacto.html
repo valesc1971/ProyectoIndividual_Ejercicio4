@@ -1,0 +1,28 @@
+{%extends 'base_layout.html'%}
+{%block content%}
+<header>
+  <h1>Contacto</h1> 
+</header>
+
+<form class="form-1" name="miFormu" onsubmit="return(validacion());">  
+  <div class="mb-3">
+    <label for="name" class="form-label">Nombre</label>
+    <input name="nombre" type="text" class="form-control" id="name" placeholder="Nombre" >
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Correo</label>
+    <input name="correo" type="text" class="form-control" id="email" placeholder="Correo">
+  </div>
+  
+  
+  <div class="mb-3">
+    <label for="message" class="form-label">Mensaje</label>
+    <textarea name="pedido" class="form-control" id="message" placeholder="Mensaje" rows="3" ></textarea>
+  </div>
+
+
+  <button id="btn-1" type="submit" class="btn btn-outline-dark">Enviar Mensaje</button>
+</form>
+ 
+
+  {%endblock content%}
